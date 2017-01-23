@@ -5,7 +5,7 @@
     <small>overview</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="http://www.haliaeetus.cn/dubbo-monitor"><i class="fa fa-home"></i> Home</a></li>
     <li class="active">Hosts</li>
   </ol>
 </section>
@@ -49,14 +49,14 @@
               <td>${row.owner} #if (row.organization) [${row.organization}] #end</td>
               <td>
                 #if (row.providerCount > 0)
-                <a href="hosts/providers?host=${row.host}"><i class="fa fa-truck"></i> [${row.providerCount}]</a>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/hosts/providers?host=${row.host}"><i class="fa fa-truck"></i> [${row.providerCount}]</a>
                 #else
                 <span class="badge bg-gray">No provider</span>
                 #end
               </td>
               <td>
                 #if (row.consumerCount > 0)
-                <a href="hosts/consumers?host=${row.host}"><i class="fa fa-credit-card"></i> [${row.consumerCount}]</a>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/hosts/consumers?host=${row.host}"><i class="fa fa-credit-card"></i> [${row.consumerCount}]</a>
                 #else
                 <span class="badge bg-gray">No consumer</span>
                 #end

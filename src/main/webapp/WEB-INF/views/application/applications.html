@@ -5,7 +5,7 @@
     <small>overview</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="http://www.haliaeetus.cn/dubbo-monitor/"><i class="fa fa-home"></i> Home</a></li>
     <li class="active">Applications</li>
   </ol>
 </section>
@@ -52,28 +52,28 @@
               <td>${row.owner} #if (row.organization) [${row.organization}] #end</td>
               <td>
                 #if (row.providerCount > 0)
-                <a href="applications/providers?application=${row.name}"><i class="fa fa-truck"></i> [${row.providerCount}]</a>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/providers?application=${row.name}"><i class="fa fa-truck"></i> [${row.providerCount}]</a>
                 #else
                 <span class="badge bg-gray">No provider</span>
                 #end
               </td>
               <td>
                 #if (row.consumerCount > 0)
-                <a href="applications/consumers?application=${row.name}"><i class="fa fa-credit-card"></i> [${row.consumerCount}]</a>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/consumers?application=${row.name}"><i class="fa fa-credit-card"></i> [${row.consumerCount}]</a>
                 #else
                 <span class="badge bg-gray">No consumer</span>
                 #end
               </td>
               <td>
                 #if (row.efferentCount > 0)
-                <a href="applications/dependencies?application=${row.name}"><i class="fa fa-level-up"></i> [${row.efferentCount}]</a>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/dependencies?application=${row.name}"><i class="fa fa-level-up"></i> [${row.efferentCount}]</a>
                 #else
                 <span class="badge bg-gray">No dependency</span>
                 #end
               </td>
               <td>
                 #if (row.afferentCount > 0)
-                <a href="applications/dependencies?application=${row.name}&reverse=true"><i class="fa fa-level-down"></i>
+                <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/dependencies?application=${row.name}&reverse=true"><i class="fa fa-level-down"></i>
                   [${row.afferentCount}]</a>
                 #else
                 <span class="badge bg-gray">No used</span>

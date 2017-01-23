@@ -5,15 +5,15 @@
     <small>overview</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href=""><i class="fa fa-home"></i> Home</a></li>
-    <li><a href="applications"><i class="fa fa-cubes"></i> Applications</a></li>
+    <li><a href="http://www.haliaeetus.cn/dubbo-monitor/"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="http://www.haliaeetus.cn/dubbo-monitor/applications"><i class="fa fa-cubes"></i> Applications</a></li>
     <li>${application}</li>
     <li class="active">
-      <a href="applications/providers?application=${application}">Providers</a> | <a href="applications/consumers?application=${application}">Consumers</a> |
+      <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/providers?application=${application}">Providers</a> | <a href="applications/consumers?application=${application}">Consumers</a> |
       #if (reverse)
-      <a href="applications/dependencies?application=${application}">Depends On</a> | Used By
+      <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/dependencies?application=${application}">Depends On</a> | Used By
       #else
-      Depends On | <a href="applications/dependencies?application=${application}&reverse=true">Used By</a>
+      Depends On | <a href="http://www.haliaeetus.cn/dubbo-monitor/applications/dependencies?application=${application}&reverse=true">Used By</a>
       #end
     </li>
   </ol>
